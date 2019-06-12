@@ -1,0 +1,260 @@
+{
+	"info": {
+		"_postman_id": "d12f695f-198c-487e-b7ff-2839df8629de",
+		"name": "EX10801199810955",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:3000/api/things/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "receta",
+							"value": "Lasagna",
+							"type": "text"
+						},
+						{
+							"key": "precio",
+							"value": "145",
+							"type": "text"
+						},
+						{
+							"key": "tipo",
+							"value": "Italiana",
+							"type": "text"
+						},
+						{
+							"key": "observacion",
+							"value": "El chef es griton",
+							"type": "text"
+						},
+						{
+							"key": "estado",
+							"value": "Excelente",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/things/",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"things",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/api/things/88b09f6e-39c0-4ef0-bde8-12c165d21e36",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "receta",
+							"value": "Lasagna",
+							"type": "text"
+						},
+						{
+							"key": "precio",
+							"value": "145",
+							"type": "text"
+						},
+						{
+							"key": "tipo",
+							"value": "Italiana",
+							"type": "text"
+						},
+						{
+							"key": "observacion",
+							"value": "El chef es griton",
+							"type": "text"
+						},
+						{
+							"key": "estado",
+							"value": "Excelente",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/things/88b09f6e-39c0-4ef0-bde8-12c165d21e36",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"things",
+						"88b09f6e-39c0-4ef0-bde8-12c165d21e36"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/api/things/f79573d1-b809-47ae-bdf9-20fd34a62da7",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "receta",
+							"value": "Lasagna",
+							"type": "text"
+						},
+						{
+							"key": "precio",
+							"value": "145",
+							"type": "text"
+						},
+						{
+							"key": "tipo",
+							"value": "Italiana",
+							"type": "text"
+						},
+						{
+							"key": "observacion",
+							"value": "El chef es griton",
+							"type": "text"
+						},
+						{
+							"key": "estado",
+							"value": "Excelente",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/things/f79573d1-b809-47ae-bdf9-20fd34a62da7",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"things",
+						"f79573d1-b809-47ae-bdf9-20fd34a62da7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/api/things/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "receta",
+							"value": "Lasagna",
+							"type": "text"
+						},
+						{
+							"key": "precio",
+							"value": "130",
+							"type": "text"
+						},
+						{
+							"key": "tipo",
+							"value": "Italiana",
+							"type": "text"
+						},
+						{
+							"key": "observacion",
+							"value": "El chef es griton",
+							"type": "text"
+						},
+						{
+							"key": "estado",
+							"value": "Excelente",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/things/",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"things",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/api/things/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/things/",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"things",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
