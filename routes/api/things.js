@@ -72,4 +72,19 @@ router.put('/:id', (req, res, next)=>{
 
 //Metodo Put
 
+router.delete('/:id', (req, res, next)=>{
+    var id = req.params.id;
+    var deletedThing = {};
+    thingsCollection = thingsCollection.filter((e, i)=>{
+        if(e.id===id){
+            deletedThing = Object.assign({}, e);
+            return false;
+        }
+        return true;
+    });
+    res.status(200).json({d: deletedThing, c: thingsCollection });
+});
+
+//MetodoDelete
+
 module.exports=router;
