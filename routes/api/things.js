@@ -54,4 +54,22 @@ router.post('/',(req, res, next)=>{
     res.status(200).json(newElement);
 });
 
+//Metodo Post
+
+router.put('/:id', (req, res, next)=>{
+    var id = req.params.id;
+    var modifiedThing = {};
+    var originalThing = {};
+    thingsCollection = thingsCollection.map((e, i)=>{
+        if(e.id===id){
+            originalThing = Object.assign({}, e);
+            return modifiedThing = Object.assign({}, e, req.body);
+        }
+        return e;
+    });
+    res.status(200).json({o: originalThing, m: modifiedThing});
+});
+
+//Metodo Put
+
 module.exports=router;
