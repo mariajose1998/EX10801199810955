@@ -42,12 +42,16 @@ router.get('/:id',(req, res, next)=>{
     }
 });
 
-router.get('/',(req,res,next)=>{
+router.get('/',(req, res, next)=>{
     res.status(200).json({thingsCollection})
-})
+});
 
 //Metodos Get
 
-
+router.post('/',(req, res, next)=>{
+    var newElement = Object.assign({}, thingsStruct, req.body, {id:uuid()});
+    thingsCollection.push(newElement);
+    res.status(200).json(newElement);
+});
 
 module.exports=router;
